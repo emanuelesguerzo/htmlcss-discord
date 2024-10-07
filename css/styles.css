@@ -1,3 +1,12 @@
+/* Custom Properties */
+:root {
+    --bg-header: #255ee9;
+    --main-white: #ffffff;
+    --main-black: #23272a;
+    --discord-violet: #7289da;
+}
+
+
 /*
 #add8e6
 #daa520
@@ -20,12 +29,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 img {
     max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* COMMON */
@@ -38,8 +51,7 @@ img {
 
 /* Header */
 .header {
-    /* debug */
-    background-color: #add8e6;
+    background-color: var(--bg-header);
 }
 
 .nav {
@@ -51,9 +63,10 @@ img {
 
 .logo {
     width: 25%;
-    /* debug */
-    border: 1px dashed black;
-    background-color: #daa520;
+}
+
+.discord-logo {
+    width: 100px;
 }
 
 .nav-list {
@@ -62,24 +75,28 @@ img {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 5px;
-      /* debug */
-    border: 1px dashed black;
-    background-color: #daa520;
+    align-items: center;
+    color: var(--main-white);
+    font-weight: 500;
+    gap: 20px;
 }
 
 .nav-list a {
-    text-decoration: none;
-    /* debug */
-    color: black;
+    font-size: 0.9rem;
 }
 
 .login {
     width: 25%;
     text-align: end;
-      /* debug */
-    border: 1px dashed black;
-    background-color: #daa520;
+}
+
+.login a {
+    border: 1px solid var(--main-white);
+    padding: 8px 10px;
+    background-color: var(--main-white);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    
 }
 
 /* Hero Banner */
