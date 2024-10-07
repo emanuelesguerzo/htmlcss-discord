@@ -27,6 +27,10 @@ li {
     list-style: none;
 }
 
+hr {
+    border-color: var(--discord-violet);
+}
+
 /* COMMON */
 /* Layout */
 .container {
@@ -189,12 +193,22 @@ li {
 /* Footer */
 .footer {
     padding-top: 40px;
-    font-weight: 500;
+    font-size: 0.7rem;
     background-color: var(--main-black);
     color: var(--main-white);
 }
 
 /* Footer Top */
+.footer-top li {
+    margin-bottom: 10px;
+}
+
+.footer-top i {
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 0.9rem;
+}
+
 .col-footer-big {
     width: calc(100% / 5);
     flex: 2;
@@ -203,6 +217,7 @@ li {
 .col-footer-big h4 {
     font-size: 1.5rem;
     color: var(--discord-violet);
+    margin-bottom: 15px;
 }
 
 .col-footer {
@@ -212,10 +227,16 @@ li {
 
 .col-footer li:first-of-type {
     color: var(--discord-violet);
+    font-weight: 600;
 }
 
-.ita {
+.language .ita {
     width: 20px;
+    vertical-align: bottom;
+}
+
+.language i {
+    font-size: 0.6rem;
 }
 
 /* Footer Bottom */
