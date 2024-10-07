@@ -78,11 +78,11 @@ a {
     align-items: center;
     color: var(--main-white);
     font-weight: 500;
-    gap: 20px;
+    gap: 22px;
 }
 
 .nav-list a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 .login {
@@ -92,10 +92,10 @@ a {
 
 .login a {
     border: 1px solid var(--main-white);
-    padding: 8px 10px;
+    padding: 5px 8px;
     background-color: var(--main-white);
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     
 }
 
@@ -103,17 +103,51 @@ a {
 .hero-banner {
     display: flex;
     justify-content: center;
-    /* debug */
-    background-color: #00008b;
+    background: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .hero-img {
     width: 60%; 
-    /* debug */
-    background-color: #ee82ee;
-    border: 1px dashed black;
-    min-height: 180px;
+    color: var(--main-white);
+    text-align: center;
+    padding: 15px;
+    align-items: center;
 }
+
+.hero-img h1{
+    font-size: 2rem;
+}
+
+.hero-img p {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.hero-img a {
+   padding: 8px;
+   border: 1px solid transparent;
+   border-radius: 20px;
+   font-size: 0.9rem;
+}
+
+.dwl-mac {
+    border-color: var(--main-white);
+    background-color: var(--main-white);
+    color: var(--main-black);
+}
+
+.browser {
+    border-color: var(--main-black);
+    background-color: var(--main-black);
+    margin-left: 10px;
+    text-wrap: nowrap;
+}
+
 
 /* Sections*/
 .row {
@@ -204,6 +238,14 @@ a {
 
 .mt-10 {
     margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }
 
 .gray {
