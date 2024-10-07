@@ -1,6 +1,7 @@
 /* Custom Properties */
 :root {
     --bg-header: #255ee9;
+    --bg-section: #d3d3d3;
     --main-white: #ffffff;
     --main-black: #23272a;
     --discord-violet: #7289da;
@@ -37,6 +38,10 @@ hr {
     max-width: 1100px;
     margin: 0 auto;
     width: 80%;
+}
+
+.upsidedown {
+    transform: rotate(180deg);
 }
 
 /* Header */
@@ -202,6 +207,7 @@ hr {
 .footer-top {
     margin-bottom: 10px;
 }
+
 .footer-top li {
     margin-bottom: 10px;
 }
@@ -280,6 +286,10 @@ hr {
 
 .mt-20 {
     margin-top: 20px;
+}
+
+.mb-remove {
+    margin-bottom: -5px;
 }
 
 .mb-20 {
