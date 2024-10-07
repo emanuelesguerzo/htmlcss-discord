@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- /Font Awesome -->
 
     <link rel="stylesheet" href="./css/styles.css">
@@ -18,26 +20,33 @@
     <!-- Header -->
     <header class="header">
 
-        <!-- Container -->
+        <!-- Nav Container -->
+        <nav class="row container">
 
-            <nav class="nav container">
+            <!-- Logo -->
+            <div class="logo pd-5">
+                <img class="discord-logo" width="100px" src="./img/logo.svg" alt="Logo Discord">
+            </div>
+            <!-- /Logo -->
 
-                <div class="logo pd-5">
-                    <img class="discord-logo" src="./img/logo.svg" alt="Logo Discord">
-                </div>
-                <ul class="nav-list pd-5">
-                    <li><a href="#">Scarica</a></li>
-                    <li><a href="#">Perché Discord</a></li>
-                    <li><a href="#">Nitro</a></li>
-                    <li><a href="#">Sicurezza</a></li>
-                    <li><a href="#">Assistenza</a></li>   
-                </ul>
-                <div class="login pd-5">
-                    <a href="#">Accedi</a>
-                </div>
-            </nav>
+            <!-- Nav List -->
+            <ul class="row nav-list pd-5">
+                <li><a href="#">Scarica</a></li>
+                <li><a href="#">Perché Discord</a></li>
+                <li><a href="#">Nitro</a></li>
+                <li><a href="#">Sicurezza</a></li>
+                <li><a href="#">Assistenza</a></li>
+            </ul>
+            <!-- Nav List -->
 
-        <!-- /Container -->
+            <!-- Login Button -->
+            <div class="header-login pd-5">
+                <a class="btn login" href="#">Accedi</a>
+            </div>
+            <!-- /Login Button -->
+
+        </nav>
+        <!-- /Nav Container -->
 
     </header>
     <!-- /Header -->
@@ -46,14 +55,18 @@
     <main class="main">
 
         <!-- Hero Banner -->
-        <section class="hero-banner">
+        <section class="hero-banner row">
 
-            <div class="hero-img">
+            <!-- Hero Text and Buttons -->
+            <div class="hero">
                 <h1 class="main-title mb-20">Il tuo posto per parlare</h1>
-                <p class="main-text mb-20">Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
-                <a class="dwl-mac" href="#"><i class="fa-solid fa-arrow-down-long"></i> Scarica per Mac</a>
-                <a class="browser"href="#">Apri Discord nel tuo browser</a>
+                <p class="main-text mb-20">Che tu faccia parte di un club scolastico, gruppo di gamer, comunità
+                    artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo
+                    assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
+                <a class="btn-main dwl-mac" href="#"><i class="fa-solid fa-arrow-down-long"></i> Scarica per Mac</a>
+                <a class="btn-main browser" href="#">Apri Discord nel tuo browser</a>
             </div>
+            <!-- /Hero Text and Buttons -->
 
         </section>
         <!-- /Hero Banner -->
@@ -62,14 +75,22 @@
         <section class="section">
 
             <!-- Container -->
-            <div class="row container pd-tb20">
+            <div class="row container mt-30 pd-tb20">
+
+                <!-- Big Column -->
                 <div class="col-60">
                     <img src="./img/item1.svg" alt="Group Chat Demo">
                 </div>
+                <!-- /Big Column -->
+
+                <!-- Small Column -->
                 <div class="col-40">
                     <h2 class="feat-title mb-20">Un luogo a invito con tutto lo spazio necessario per parlare</h2>
-                    <p>I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
+                    <p class="feat-text">I server Discord sono organizzati in canali tematici in cui puoi collaborare,
+                        condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
                 </div>
+                <!-- /Small Column -->
+
             </div>
             <!-- /Container -->
 
@@ -77,25 +98,36 @@
         <!-- /Section 1 -->
 
         <!-- Wave -->
-         <div class="divisor mb-remove">
-            <svg class="wave-1hkxOo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
-                <path class="wavePath-haxJK1 animationPaused-2hZ4IO" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="#d3d3d3"></path>
+        <div class="divisor mb-remove">
+            <svg class="wave-1hkxOo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"
+                preserveAspectRatio="none">
+                <path class="wavePath-haxJK1 animationPaused-2hZ4IO"
+                    d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z"
+                    fill="#d3d3d3"></path>
             </svg>
-         </div>
-         <!-- /Wave -->
+        </div>
+        <!-- /Wave -->
 
         <!-- Section 2 -->
         <section class="section gray">
 
             <!-- Container -->
             <div class="row container pd-tb20">
+
+                <!-- Small Column -->
                 <div class="col-40">
                     <h2 class="feat-title mb-20">Dove trovarsi é facile</h2>
-                    <p>Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che sei lì e unirsi istantaneamente senza dover chiamare.</p>
+                    <p class="feat-text">Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server
+                        possono vedere che sei lì e unirsi istantaneamente senza dover chiamare.</p>
                 </div>
+                <!-- /Small Column -->
+
+                <!-- Big Column -->
                 <div class="col-60">
                     <img src="./img/item2.svg" alt="Voice Chat Demo">
                 </div>
+                <!-- /Big Column -->
+
             </div>
             <!-- /Container -->
 
@@ -104,25 +136,37 @@
 
         <!-- Wave Upsidedown -->
         <div class="divisor">
-            <svg class="wave-1hkxOo upsidedown" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
-                <path class="wavePath-haxJK1 animationPaused-2hZ4IO" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="#d3d3d3"></path>
+            <svg class="wave-1hkxOo upsidedown" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"
+                preserveAspectRatio="none">
+                <path class="wavePath-haxJK1 animationPaused-2hZ4IO"
+                    d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z"
+                    fill="#d3d3d3"></path>
             </svg>
-         </div>
-         <!-- /Wave Upsidedown-->
+        </div>
+        <!-- /Wave Upsidedown-->
 
         <!-- Section 3 -->
         <section class="section">
 
             <!-- Container -->
-                <div class="row container pd-tb20">
-                    <div class="col-60">
-                        <img src="./img/item3.svg" alt="Friends List Demo">
-                    </div>
-                    <div class="col-40">
-                        <h2 class="feat-title mb-20">Da pochi a un fandom</h2>
-                        <p>Dai inizio a una community di qualsiasi dimensione con strumenti di moderazione e accesso ai membri personalizzabile. Concedi ai membri poteri speciali, crea canali privati, e molto altro.</p>
-                    </div>
+            <div class="row container pd-tb20">
+
+                <!-- Big Column -->
+                <div class="col-60">
+                    <img src="./img/item3.svg" alt="Friends List Demo">
                 </div>
+                <!-- /Big Column -->
+
+                <!-- Small Column -->
+                <div class="col-40">
+                    <h2 class="feat-title mb-20">Da pochi a un fandom</h2>
+                    <p class="feat-text">Dai inizio a una community di qualsiasi dimensione con strumenti di moderazione
+                        e accesso ai membri personalizzabile. Concedi ai membri poteri speciali, crea canali privati, e
+                        molto altro.</p>
+                </div>
+                <!-- /Small Column -->
+
+            </div>
             <!-- /Container -->
 
         </section>
@@ -130,31 +174,46 @@
 
         <!-- Wave -->
         <div class="divisor mb-remove">
-            <svg class="wave-1hkxOo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
-                <path class="wavePath-haxJK1 animationPaused-2hZ4IO" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="#d3d3d3"></path>
+            <svg class="wave-1hkxOo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"
+                preserveAspectRatio="none">
+                <path class="wavePath-haxJK1 animationPaused-2hZ4IO"
+                    d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z"
+                    fill="#d3d3d3"></path>
             </svg>
-         </div>
-         <!-- /Wave -->
+        </div>
+        <!-- /Wave -->
 
         <!-- Section 4 -->
         <section class="section gray">
 
             <!-- Container -->
-                <div class="row container pd-tb20">
-                    <div class="col-100">
-                        <h2 class="feat-title ta-center mb-20">Tecnologia affidabile per tenersi in contatto</h2>
-                        <p>Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.</p>
-                        <img src="./img/item4-big.svg" alt="Various Discord Features">
-                    <div class="stars mb-40">
+            <div class="row container pd-tb20">
+
+                <!-- Big Column -->
+                <div class="col-100 container">
+
+                    <h2 class="feat-title ta-center mb-20">Tecnologia affidabile per tenersi in contatto</h2>
+
+                    <p class="feat-text container">Video e audio a bassa latenza ti faranno sentire come se foste tutti
+                        nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in
+                        una sessione di disegno con la condivisione schermo.</p>
+
+                    <img src="./img/item4-big.svg" alt="Various Discord Features">
+
+
+                    <div class="stars mt-10">
                         <img class="stars-img" src="./img/stars.svg" alt="Stelline">
                         <h3 class="ta-center">Pronto a iniziare la tua avventura?</h3>
-                    </div>    
-                        <div class="mb-50 ta-center">
-                           <a class="dwl-mac2"><i class="fa-solid fa-arrow-down-long"></i> Scarica per Mac</a> 
-                        </div>
-                        
                     </div>
+
+                    <div class="mb-50 ta-center">
+                        <a class="btn-main dwl-mac2"><i class="fa-solid fa-arrow-down-long"></i> Scarica per Mac</a>
+                    </div>
+
                 </div>
+                <!-- /Big Column -->
+
+            </div>
             <!-- /Container -->
 
         </section>
@@ -168,13 +227,29 @@
 
         <!-- Footer Top Container -->
         <div class="footer-top container row2">
+
+            <!-- Big Column -->
             <div class="col-footer-big">
                 <ul>
-                    <li><h4>Il tuo posto per parlare</h4></li>
-                    <li><span class="language"><img class="ita" src="./img/ita.png" alt="Bandiera italiana"> Italiano <i class="fa-solid fa-chevron-down"></i></span></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-square-facebook"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li>
+                        <h4>Il tuo posto per parlare</h4>
+                    </li>
+                    <li>
+                        <span class="language">
+                            <img class="ita" src="./img/ita.png" alt="Bandiera italiana"> Italiano <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
                 </ul>
             </div>
+            <!-- /Big Column -->
+
+            <!-- Small Column 1 -->
             <div class="col-footer">
                 <ul>
                     <li><a href="#">Prodotto</a></li>
@@ -185,6 +260,9 @@
                     <li><a href="#">Assistenza</a></li>
                 </ul>
             </div>
+            <!-- /Small Column 1 -->
+
+            <!-- Small Column 2 -->
             <div class="col-footer">
                 <ul>
                     <li><a href="#">Compagnia</a></li>
@@ -195,6 +273,9 @@
                     <li><a href="#">Negozio</a></li>
                 </ul>
             </div>
+            <!-- /Small Column 2 -->
+
+            <!-- Small Column 3 -->
             <div class="col-footer">
                 <ul>
                     <li><a href="#">Risorse</a></li>
@@ -210,6 +291,9 @@
                     <li><a href="#">Assistenza</a></li>
                 </ul>
             </div>
+            <!-- /Small Column 3 -->
+
+            <!-- Small Column 4 -->
             <div class="col-footer">
                 <ul>
                     <li><a href="#">Norme</a></li>
@@ -220,6 +304,8 @@
                     <li><a href="#">Assistenza</a></li>
                 </ul>
             </div>
+            <!-- /Small Column 4 -->
+
         </div>
         <!-- /Footer Top Container -->
 
@@ -227,12 +313,19 @@
 
         <!-- Footer Bottom Container -->
         <div class="footer-bottom container footer-row mt-10">
+
+            <!-- Footer Logo -->
             <div>
                 <img class="footer-logo" src="./img/logo.svg" alt="Logo Discord">
             </div>
+            <!-- /Footer Logo -->
+
+            <!-- Footer Button -->
             <div class="footer-btn">
-                <a class="register" href="#">Registrati</a>
+                <a class="btn register" href="#">Registrati</a>
             </div>
+            <!-- /Footer Button -->
+
         </div>
         <!-- /Footer Bottom Container -->
 
