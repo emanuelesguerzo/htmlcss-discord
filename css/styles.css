@@ -42,6 +42,7 @@ hr {
 
 .upsidedown {
     transform: rotate(180deg);
+    margin-top: -1px;
 }
 
 .row {
@@ -122,7 +123,6 @@ hr {
     color: var(--main-white);
     text-align: center;
     padding: 20px;
-    align-items: center;
 }
 
 .hero h1{
@@ -279,7 +279,7 @@ hr {
 }
 
 .mb-remove {
-    margin-bottom: -5px;
+    margin-bottom: -4px;
 }
 
 .mb-20 {
