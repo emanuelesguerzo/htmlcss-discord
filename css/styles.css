@@ -59,6 +59,7 @@ hr {
 
 /* Buttons */
 .btn {
+    display: inline-block; 
     border: 1px solid transparent;
     border-radius: 20px;
     font-size: 0.7rem;
@@ -66,6 +67,7 @@ hr {
 }
 
 .btn-main {
+    display: inline-block;
     padding: 8px;
     border: 1px solid transparent;
     border-radius: 20px;
@@ -114,7 +116,7 @@ hr {
     background-size: cover;
     background-position: center;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 /* Hero Text */
@@ -125,7 +127,7 @@ hr {
     padding: 20px;
 }
 
-.hero h1{
+.hero .main-title{
     font-size: 2rem;
 }
 
